@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('./../assets/images/world-map-bg.jpg') no-repeat center top #09161e;
+    font-family: 'Roboto', sans-serif;
+  
+    font-size: 14px;
+  }
+  
+  .wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+  
+  .container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .wrap-login100 {
+    width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .p-r-10 {
+    padding-right: 30px;
+  }
+  .p-l-10 {
+    padding-left: 30px;
+  }
+  .p-b-10 {
+    padding-bottom: 50px;
+  }
+  
+  .p-t-10 {
+    padding-top: 10px;
+  }
+  
+  .fontH1 {
+    font-size: 34px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .fontH3 {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .main-progress {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  .progressbar {
+    margin: 0;
+    padding: 0;
+    counter-reset: step;
+  }
+  .progressbar li {
+    list-style-type: none;
+    width: 33%;
+    float: left;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d7d7d;
+  }
+  .progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 27px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+  }
+  .progressbar li:first-child:after {
+    content: none;
+  }
+  .progressbar li.active {
+    color: #092d6f;
+  }
+  .progressbar li.active:before {
+    border-color: #092d6f;
+  }
+  .progressbar li.active + li:after {
+    background-color: #092d6f;
+  }
+  input::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+  img {
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    margin-right: 1%;
+  }
+
+  .textField{
+    padding: .5em .6em;
+    font-size: 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: inset 0 1px 3px #ddd;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    width:260px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
